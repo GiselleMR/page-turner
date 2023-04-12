@@ -7,7 +7,6 @@ import NewOrderPage from '../NewOrderPage/NewOrderPage';
 import OrderHistoryPage from '../OrderHistoryPage/OrderHistoryPage';
 import NavBar from '../../components/NavBar/NavBar';
 
-
 async function getData() {
   try {
       const response = await fetch(`https://www.googleapis.com/books/v1/volumes?q=flowers&key=${process.env.REACT_APP_GoogleAPIPageTurner}`);
