@@ -9,3 +9,38 @@ const googleSearchBooks = async (req, res) => {
     console.log('google results', googleResponse.data);
     res.json(googleResponse.data.items);
 };
+
+const addNewBook = async (req, res) => {
+    const book = await Book.findOne({googleid: req.body.googleid});
+    if (book) {
+        if (book.users.includes(req.user._id)){
+            book.users.remove(req.user._id)
+            console.log("deletedBook", book);
+        } else {
+            book.users.push(req.user._id)
+        }
+        await book.save();
+        res.json(book);
+    } else {
+        req.body.users = req.user._id;
+        const addBook = await Book.create(req.body)
+        await addBook.save();
+        res.json(addBook);
+    }
+    console.log(req.body);
+};
+
+
+const getUserBooks = async (req, res) => {
+    try {
+        const books = await Book.find({users: req.user._id})
+        res.json(books);
+        console.log(books);
+    } catch (err) {
+        console.log(err);
+        res.status(500).json(err);
+    }
+
+};
+
+module.exports = {googleSearchBooks, addNewBook, getUserBooks};
