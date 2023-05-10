@@ -1,6 +1,6 @@
 PAGE TURNER
 
--This application is for readers to save books they have read and get reccomendations on books that they may find interesting
+This application is for readers to save books they have read and get reccomendations on books that they may find interesting
 
 *screenshots here*
 
