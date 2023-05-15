@@ -21,7 +21,6 @@ const BookCard = ({ book, textButton, isBookList, loading, success, bookList, se
                 setBook(addedBook);
             setButtonText(success)
         } catch (err) {
-            console.log('add book error',err)
         }
     }
     return (

@@ -10,6 +10,13 @@ require('./config/database');
 const app = express();
 
 app.use(logger('dev'));
+
+var cors = require('cors');
+// var corsOptions = {
+//     origin: '*',
+//     optionsSuccessStatus: 200,
+//   }
+app.use(cors());
 app.use(express.json());
 
 // Configure both serve-favicon & static middleware
@@ -25,6 +32,10 @@ const port = process.env.PORT || 3001;
 
 // Put API routes here, before the "catch all" route
 app.use('/api/users', require('./routes/api/users'));
+app.use('/api/post', require('./routes/api/post'));
+app.use('/api/books', require('./routes/api/books'));
+
+
 
 // The following "catch all" route (note the *) is necessary
 // to return the index.html on all non-AJAX/API requests
@@ -35,3 +46,4 @@ app.get('/*', function(req, res) {
 app.listen(port, function() {
   console.log(`Express app running on port ${port}`);
 });
+

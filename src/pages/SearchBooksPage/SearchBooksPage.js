@@ -8,6 +8,7 @@ export default function SearchBooksPage() {
 
   const handleClick = async () => {
     const bookResult = await searchBooks({searchTerm: searchTerm})
+    console.log('bookResuly', bookResult)
     // title, authors, summary, image, subtitle
     const formattedBooks = bookResult.map((book) => {
       return {

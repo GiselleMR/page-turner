@@ -1,5 +1,5 @@
 const axios = require("axios");
-const User = required('../../models/user');
+const User = require('../../models/user');
 const Book = require('../../models/book');
 
 const googleSearchBooks = async (req, res) => {

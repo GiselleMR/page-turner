@@ -6,5 +6,4 @@ const postCtrl = require('../../controllers/api/post');
 router.post('/', postCtrl.create);
 router.get('/', postCtrl.index);
 
-
 module.exports = router;
