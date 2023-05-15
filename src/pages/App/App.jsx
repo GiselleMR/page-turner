@@ -22,7 +22,7 @@ export default function App() {
               <Route exact path="/" element={<HomePage />} />
               <Route path="/search-books" element={<SearchBooksPage />} />
               <Route path="/my-booklist" element={<MyBookListPage user={user}/>} />
-              <Route path="/chat" element={<ForumPage />} />
+              <Route path="/review" element={<ForumPage />} />
             </Routes>
           </>
           :

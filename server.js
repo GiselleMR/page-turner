@@ -11,7 +11,7 @@ const app = express();
 
 app.use(logger('dev'));
 
-var cors = require('cors');
+const cors = require('cors');
 // var corsOptions = {
 //     origin: '*',
 //     optionsSuccessStatus: 200,
