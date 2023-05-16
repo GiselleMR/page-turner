@@ -1,8 +1,12 @@
 PAGE TURNER
 
-This application is for readers to save books they have read and get reccomendations on books that they may find interesting. A reader can use the search books tab to use Google Books API to search for books. A user can also click on "my book list" where they can manually add and delete books they have read. 
+This application is for readers to save books they have read and get reccomendations on books that they may find interesting. A reader can use the search books tab to use Google Books API to search for books (currently the API is for books about "flower"). A user can also click on "my book list" where they can thier saved books as well as remove them. The reviews page is where all users can add reviews for books of their choice and other usesrs can see them.
 
 <img src="Screenshot 2023-05-16 at 11.31.03 AM.png">
+<img src="Screenshot 2023-05-16 at 11.31.16 AM.png">
+<img src="Screenshot 2023-05-16 at 11.31.26 AM.png">
+<img src="Screenshot 2023-05-16 at 11.31.36 AM.png">
+<img src="Screenshot 2023-05-16 at 11.31.53 AM.png">
 
 Technologies Userd
 HTML
