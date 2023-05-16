@@ -8,7 +8,7 @@ This application is for readers to save books they have read and get reccomendat
 <img src="Screenshot 2023-05-16 at 11.31.36 AM.png">
 <img src="Screenshot 2023-05-16 at 11.31.53 AM.png">
 
-Technologies Userd
+Technologies Used
 HTML
 CSS
 JS
@@ -19,7 +19,7 @@ Node.js
 
 Getting Started
 
-Returning users witll log in using their previous log in credentials so that they can add books, remove books and see saved books
+Returning users will log in using their previous log in credentials so that they can add books, remove books and see saved books
 New Users will create an account and being searching for books to add to their saved list. 
 
 *add heroku link*
@@ -28,4 +28,5 @@ Future Updates
 
 - I would like users to be able follow their friends and see what they are reading. 
 - I would like for the google API to be abel to view more than books about "flowers". Right now users can only search the key work "flower"
+- I would like users to be able to remove thier review and have their user name associated with ther review
 
